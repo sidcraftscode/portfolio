@@ -18,7 +18,15 @@ const Modal = ({ isOpen, onClose, content }) => {
           <motion.div
             className="bg-neutral-800 rounded-2xl w-full max-w-4xl h-auto max-h-[85vh] overflow-y-auto"
             initial={{ y: '100vh' }}
-            animate={{ y: '50vh', translateY: '-50%' }}
+            animate={{ 
+              y: '50vh', 
+              translateY: '-50%', 
+              transition: { 
+                type: 'spring', 
+                damping: 25,   // Reduce the bounce by increasing the damping value
+                stiffness: 300 // You can also adjust the stiffness if needed
+              } 
+            }}
             exit={{ y: '100vh' }}
             onClick={(e) => e.stopPropagation()}
           >
