@@ -108,7 +108,7 @@ const PortfolioSection = () => {
         <div className="max-w-3xl">
           <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white mb-8">Recent projects</h1>
           <p className="text-lg text-gray-400 mb-8">Here are some of the projects I have worked on recently. Feel free to <b>click on a project</b> to find out more information about it.  <Link href="/projects">
-          <span className="hover:underline text-white font-medium tracking-tight">See all my projects here &rarr;</span>
+          <br></br><br></br><span className="text-xl pt-4 hover:underline text-purple-500 font-bold tracking-tight">See all my projects here &rarr;</span>
           </Link></p>         
         </div>
         <div className="brightness-100 grid grid-cols-1 sm:grid-cols-2 gap-6">
