@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 const Contact = () => {
   return (
-    <section className="mx-auto px-4 py-12">
+    <section id="contact" className="mx-auto px-4 py-12">
     <div className="mx-auto max-w-5xl">
       <div className="max-w-3xl">
         <h1 className="mb-8 text-4xl font-bold tracking-tight text-white sm:text-6xl">

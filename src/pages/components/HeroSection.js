@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
+import Link from 'next/link';
 
 const HeroSection = () => {
   const [typewriterStarted, setTypewriterStarted] = useState(false);
@@ -37,12 +38,12 @@ const HeroSection = () => {
           <p className="pt-8 sm:text-xl font-medium text-neutral-400">
             I'm based in London and I'm a frontend developer and mobile app developer with a passion for UI design. I have been doing frontend development for over 4 years.
           </p>
-          <button className="mt-8 rounded-md bg-purple-700 w-full sm:w-auto px-6 py-3 font-medium text-purple-100 hover:bg-purple-600 hover:text-white">
+          <Link href="/projects"><button className="mt-8 rounded-md bg-purple-700 w-full sm:w-auto px-6 py-3 font-medium text-purple-100 hover:bg-purple-600 hover:text-white">
             See all my projects &rarr;
-          </button>
-          <button className="sm:mt-8 rounded-md py-3 w-full sm:w-auto sm:pl-4 text-neutral-400 hover:text-neutral-300">
+          </button></Link>
+          <Link href="#contact"><button className="sm:mt-8 rounded-md py-3 w-full sm:w-auto sm:pl-4 text-neutral-400 hover:text-neutral-300">
             Contact me &rarr;
-          </button>
+          </button></Link>
         </div>
       </div>
     </section>

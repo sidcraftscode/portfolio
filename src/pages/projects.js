@@ -110,7 +110,8 @@ const Projects = () => {
     <section className="text-white mx-auto py-12 px-4">
       <div className="max-w-5xl mx-auto">
         <div className="max-w-3xl">
-          <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white mb-8">Projects</h1>
+       <Link href="/"><p className="mb-2 text-xl hover:text-white hover:underline font-semibold text-gray-400 ">&larr; Back to home page</p></Link>
+        <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white mb-8">Projects</h1>
           <p className="text-lg text-gray-400 mb-8">Here is a list of some of my best projects, built with a variety of technologies ranging from React to SwiftUI.</p>
         </div>
         <div className="brightness-100 grid grid-cols-1 sm:grid-cols-2 gap-6">
