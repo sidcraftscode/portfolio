@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="mx-auto px-4 py-12">
+    <section id="contact" className="pb-24 mx-auto px-4 py-12">
     <div className="mx-auto max-w-5xl">
       <div className="max-w-3xl">
         <h1 className="mb-8 text-4xl font-bold tracking-tight text-white sm:text-6xl">
@@ -19,6 +19,10 @@ const Contact = () => {
           </a>
           <a href="mailto:hi@sidcrafts.com" className="block text-xl font-medium tracking-tight text-white hover:underline">
             Email: sidcraftscode →
+          </a>
+          <br></br>
+          <a href="https://github.com/sidcraftscode" className="text-purple-500 block text-xl font-medium tracking-tight hover:underline">
+            You can also check out my GitHub profile &rarr;
           </a>
         </div>
       </div>
