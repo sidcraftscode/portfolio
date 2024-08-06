@@ -47,7 +47,7 @@ const TabsSection = () => {
         {activeTab === "frontend" && (
           <div id="frontend" className="w-full bg-neutral-800 p-4 text-neutral-300">
             <div className="py-4 text-3xl text-white font-bold tracking-tight">Frontend Development</div>
-            <div className="overflow-scroll"><FrontendSkillsSvg /></div>
+            <div className="overflow-scroll sm:overflow-auto"><FrontendSkillsSvg /></div>
             <p className="text-base">
               I have been working with frontend tools for almost 4 years now. I have worked not only with popular frameworks such as React, Next.js and Tailwind CSS but also with smaller frameworks such as Alpine.js and have even used vanilla javascript for some occasions.
             </p>
@@ -57,7 +57,7 @@ const TabsSection = () => {
         {activeTab === "appdev" && (
           <div id="appdev" className="w-full bg-neutral-800 p-4 text-neutral-300">
             <div className="py-4 text-3xl text-white font-bold tracking-tight">Mobile app development</div>
-            <div className="overflow-scroll"><MobiledevSkillsSvg /></div>
+            <div className="overflow-scroll sm:overflow-auto"><MobiledevSkillsSvg /></div>
             <p className="text-base">
               I have recently picked up mobile app development just around 2 years ago. I have built apps for both iOS and Android, including the 11+ Vocab App which you can learn more about <u>here</u>. I used SwiftUI for the iOS app and React Native for the Android app.
             </p>
@@ -67,7 +67,7 @@ const TabsSection = () => {
         {activeTab === "uidesign" && (
           <div id="uidesign" className="w-full bg-neutral-800 p-4 text-neutral-300">
             <div className="py-4 text-3xl text-white font-bold tracking-tight">UI Design</div>
-            <div className="overflow-scroll"><UISkillsSvg /></div>
+            <div className="overflow-scroll sm:overflow-auto"><UISkillsSvg /></div>
             <p className="text-base">
               As a frontend and mobile app developer learning to design good UI has been crucial for making my projects not only good looking but also straightforward to use. I use tools such as Figma to design my UI before implementing it into code.
             </p>
