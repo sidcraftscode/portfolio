@@ -21,7 +21,7 @@ const Contact = () => {
             Email: sidcraftscode →
           </a>
           <br></br>
-          <a href="https://github.com/sidcraftscode" className="text-purple-500 block text-xl font-medium tracking-tight hover:underline">
+          <a href="https://github.com/sidcraftscode" className="font-bold text-purple-500 block text-xl font-medium tracking-tight hover:underline">
             You can also check out my GitHub profile &rarr;
           </a>
         </div>
