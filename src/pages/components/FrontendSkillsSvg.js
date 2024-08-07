@@ -6,7 +6,6 @@ const FrontendSkillsSvg = () => {
     <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    className="mb-4"
     width="385.5"
     height={48}
     viewBox="0 0 2056 256"

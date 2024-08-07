@@ -9,7 +9,6 @@ const UISkillsSvg = () => {
   height={48}
   viewBox="0 0 256 256"
   fill="none"
-  className="mb-4"
   version="1.1"
 >
   <g transform="translate(0, 0)">

@@ -11,7 +11,6 @@ const MobiledevSkillsSvg = () => {
   viewBox="0 0 856 256"
   fill="none"
   version="1.1"
-  className="mb-4"
 >
   <g transform="translate(0, 0)">
     <svg
