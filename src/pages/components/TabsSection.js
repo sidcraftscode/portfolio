@@ -49,8 +49,8 @@ const TabsSection = () => {
         </div>
         <div class="p-4">
         {activeTab === "frontend" && (
-          <div id="frontend" className="w-full overflow-scroll text-neutral-300">
-            <div className="py-4 text-3xl text-white font-bold overflow-scroll tracking-tight">Frontend Development</div>
+          <div id="frontend" className="w-full text-neutral-300">
+            <div className="py-4 text-3xl text-white font-bold tracking-tight">Frontend Development</div>
             <div className="sm:block hidden"><FrontendSkillsSvg/></div>
             <div className="sm:hidden block"><FrontendSkillsMobile/></div>
 
