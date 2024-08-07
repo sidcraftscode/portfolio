@@ -1,7 +1,6 @@
-// components/TabsSection.js
 "use client";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import FrontendSkillsSvg from "./FrontendSkillsSvg";
 import FrontendSkillsMobile from "./FrontendSkillsMobile";
 import MobiledevSkillsSvg from "./MobiledevSkillsSvg";
@@ -42,43 +41,65 @@ const TabsSection = () => {
                 )}
                 <span className="hidden sm:inline-block relative z-10 px-4 py-2">{tab.label}</span>
                 <span className="inline-block text-sm sm:hidden relative z-10 px-4 py-2">{tab.mobileLabel}</span>
-
               </div>
             ))}
           </div>
         </div>
-        <div class="p-4">
-        {activeTab === "frontend" && (
-          <div id="frontend" className="w-full text-neutral-300">
-            <div className="py-4 text-3xl text-white font-bold tracking-tight">Frontend Development</div>
-            <div className="sm:block hidden"><FrontendSkillsSvg/></div>
-            <div className="sm:hidden block"><FrontendSkillsMobile/></div>
+        <div className="p-4">
+          <AnimatePresence mode="wait">
+            {activeTab === "frontend" && (
+              <motion.div
+                key="frontend"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                className="w-full text-neutral-300"
+              >
+                <div className="py-4 text-3xl text-white font-bold tracking-tight">Frontend Development</div>
+                <div className="sm:block hidden"><FrontendSkillsSvg/></div>
+                <div className="sm:hidden block"><FrontendSkillsMobile/></div>
 
-            <p className="mt-4 text-base">
-              I have been working with frontend tools for almost 4 years now. I have worked not only with popular frameworks such as React, Next.js and Tailwind CSS but also with smaller frameworks such as Alpine.js and have even used vanilla javascript for some occasions.
-            </p>
-          </div>
-        )}
+                <p className="mt-4 text-base">
+                  I have been working with frontend tools for almost 4 years now. I have worked not only with popular frameworks such as React, Next.js and Tailwind CSS but also with smaller frameworks such as Alpine.js and have even used vanilla javascript for some occasions.
+                </p>
+              </motion.div>
+            )}
 
-        {activeTab === "appdev" && (
-          <div id="appdev" className="w-full text-neutral-300">
-            <div className="py-4 text-3xl text-white font-bold tracking-tight">Mobile app development</div>
-            <div><MobiledevSkillsSvg /></div>
-            <p className="mt-4 text-base">
-              I have recently picked up mobile app development just around 2 years ago. I have built apps for both iOS and Android, including the 11+ Vocab App which you can learn more about <u>here</u>. I used SwiftUI for the iOS app and React Native for the Android app.
-            </p>
-          </div>
-        )}
+            {activeTab === "appdev" && (
+              <motion.div
+                key="appdev"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                className="w-full text-neutral-300"
+              >
+                <div className="py-4 text-3xl text-white font-bold tracking-tight">Mobile app development</div>
+                <div><MobiledevSkillsSvg /></div>
+                <p className="mt-4 text-base">
+                  I have recently picked up mobile app development just around 2 years ago. I have built apps for both iOS and Android, including the 11+ Vocab App which you can learn more about <u>here</u>. I used SwiftUI for the iOS app and React Native for the Android app.
+                </p>
+              </motion.div>
+            )}
 
-        {activeTab === "uidesign" && (
-          <div id="uidesign" className="w-full text-neutral-300">
-            <div className="py-4 text-3xl text-white font-bold tracking-tight">UI Design</div>
-            <div><UISkillsSvg /></div>
-            <p className="mt-4 text-base">
-              As a frontend and mobile app developer learning to design good UI has been crucial for making my projects not only good looking but also straightforward to use. I use tools such as Figma to design my UI before implementing it into code.
-            </p>
-          </div>
-        )}
+            {activeTab === "uidesign" && (
+              <motion.div
+                key="uidesign"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                className="w-full text-neutral-300"
+              >
+                <div className="py-4 text-3xl text-white font-bold tracking-tight">UI Design</div>
+                <div><UISkillsSvg /></div>
+                <p className="mt-4 text-base">
+                  As a frontend and mobile app developer learning to design good UI has been crucial for making my projects not only good looking but also straightforward to use. I use tools such as Figma to design my UI before implementing it into code.
+                </p>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </section>
