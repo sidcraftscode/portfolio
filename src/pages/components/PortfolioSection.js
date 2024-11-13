@@ -70,7 +70,7 @@ const PortfolioSection = () => {
     { 
       image: "epv.png", 
       title: 'Eleven Plus Vocab', 
-      description: 'I designed and developed this landing page for Eleven Plus Vocab, a family business. The page was built using vanilla HTML, CSS, and JavaScript, as it was a straightforward landing page without complex features.',
+      description: 'I designed and developed this fully featured storefront for Eleven Plus Vocab. The page was built using Next.js and the Shopify API, allowing users to purchase books and resources for 11+ exam preparation.',
       link: 'https://elevenplusvocab.com'
     },
     { 
@@ -82,7 +82,7 @@ const PortfolioSection = () => {
     { 
       image: "smurfs.png", 
       title: 'Naomi Murphy\'s Website', 
-      description: 'I designed and developed a landing page for Naomi Murphy to promote her services as a singing coach. This site was built using vanilla HTML, CSS, and JavaScript, similar to the Eleven Plus Vocab website.',
+      description: 'I designed and developed a landing page for Naomi Murphy to promote her services as a singing coach. This site was built using vanilla HTML, CSS, and JavaScript.',
       link: 'https://naomimurphy.vercel.app'
     },
     { 

@@ -7,7 +7,7 @@ export default function Document() {
         <link rel="preconnect" href="https://rsms.me/"/>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
       </Head>
-      <body class="bg-black">
+      <body className="bg-black">
         <div className="border-t-8 border-purple-500">
         <Main />
         <NextScript />

@@ -18,7 +18,7 @@ const Contact = () => {
             Linkedin: sidcraftscode →
           </a>
           <a href="mailto:hi@sidcrafts.com" className="block text-xl font-medium tracking-tight text-white hover:underline">
-            Email: sidcraftscode →
+            Email: hi@sidcrafts.com →
           </a>
           <br></br>
           <a href="https://github.com/sidcraftscode" className="font-bold text-purple-500 block text-xl font-medium tracking-tight hover:underline">

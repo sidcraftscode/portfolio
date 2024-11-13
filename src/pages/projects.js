@@ -68,9 +68,9 @@ const Projects = () => {
 
   const projects = [
     { 
-      image: "epv.png", 
+      image: "epv2.png", 
       title: 'Eleven Plus Vocab', 
-      description: 'I designed and developed this landing page for Eleven Plus Vocab, a family business. The page was built using vanilla HTML, CSS, and JavaScript, as it was a straightforward landing page without complex features.',
+      description: 'I designed and developed the storefront for Eleven Plus Vocab, a family business. The page was built using Next.js and the Shopify API.',
       link: 'https://elevenplusvocab.com'
     },
     { 
